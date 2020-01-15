@@ -9,5 +9,5 @@ var nodeClass = new NodeClass();
 // setMessage 함수로 값을 입력한다.
 nodeClass.setMessage('Good to See u!');
 
-// 입력된 값을 출력한다.
+// 입력된 값을 출력한다.`
 console.log(nodeClass.getMessage());
