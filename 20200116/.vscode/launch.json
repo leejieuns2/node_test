@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\img_test.js"
+            "program": "${workspaceFolder}\\path_test.js"
             //다른 파일을 실행시키고 싶을 때 js 파일명을 변경해야함.
         }
     ]
