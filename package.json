@@ -1,0 +1,24 @@
+{
+  "name": "node_test",
+  "version": "1.0.0",
+  "description": "server side javascript tutorials",
+  "main": "index.js",
+  "dependencies": {
+    "uglify-js": "^3.10.1",
+    "uglify": "^0.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leejieuns2/node_test.git"
+  },
+  "author": "jingni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leejieuns2/node_test/issues"
+  },
+  "homepage": "https://github.com/leejieuns2/node_test#readme"
+}
