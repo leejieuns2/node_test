@@ -4,6 +4,8 @@
   "description": "server side javascript tutorials",
   "main": "index.js",
   "dependencies": {
+    "sample": "0.0.2",
+    "uglify-js": "^3.10.1",
     "underscore": "^1.10.2"
   },
   "devDependencies": {},
