@@ -7,3 +7,5 @@ console.log(arr[0]);
 console.log(_.first(arr));
 console.log(arr[arr.length-1]);
 console.log(_.last(arr));
+
+/* npm이 node.js 모듈 환경의 기본이기 때문에 잘 숙지하는 것이 좋음. */
