@@ -14,4 +14,8 @@ fs.readFile('data.txt', {encoding:'utf8'}, function(err, data) {
   console.log(3);
   console.log(data);
 });
+
 console.log(4);
+
+/* 2-4-3 순서로 실행되는 이유 : data.txt를 읽고 있는 동안은 익명함수 실행 안됨.
+ * 그 사이에 그 뒤에 있는 코드들이 실행되고 있음. */
