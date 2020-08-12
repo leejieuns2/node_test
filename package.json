@@ -5,6 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.17.1",
+    "jade": "^1.11.0",
+    "npm": "^6.14.7",
     "sample": "0.0.2",
     "uglify-js": "^3.10.1",
     "underscore": "^1.10.2"
