@@ -4,12 +4,14 @@ var express = require('express');
 var app = express();
 const port = 3000
 
+// 코드의 인덴테이션을 이쁘게 해주는 기능.
+app.locals.pretty = true;
 app.set('view engine', 'jade');
 app.set('views', '../views');
 app.use(express.static('../public'));
 
 app.get('/templete', function(req, res) {
-  res.render('temp');
+  res.render('temp', {time:Date(), title:'Jade'});
   // temp 라는 이름의 파일을 렌더링해서 전송한다.
 });
 
