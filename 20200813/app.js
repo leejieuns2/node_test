@@ -8,8 +8,45 @@ const port = 3000
 app.locals.pretty = true;
 app.set('view engine', 'jade');
 app.set('views', '../views');
-app.use(express.static('../public'));
+app.use(express.static('public'));
 
+// query string
+app.get('/topic', function(req, res) {
+  var topics = [
+    'Javascript is ...',
+    'Node.js is ...',
+    'Express is ...'
+  ];
+
+  var output = `
+    <a href="/topic?id=0">Javascript</a><br>
+    <a href="/topic?id=1">Node.js</a><br>
+    <a href="/topic?id=2">Express</a><br>
+    ${topics[req.query.id]}`
+  res.send(output);
+});
+
+// path 방식
+app.get('/topic/:id', function(req, res) {
+  var topics = [
+    'Javascript is ...',
+    'Node.js is ...',
+    'Express is ...'
+  ];
+
+  var output = `
+    <a href="/topic?id=0">Javascript</a><br>
+    <a href="/topic?id=1">Node.js</a><br>
+    <a href="/topic?id=2">Express</a><br>
+    ${topics[req.params.id]}`
+  res.send(output);
+});
+
+app.get('/topic/:id/:mode', function(req, res) {
+    res.send(req.params.id + ', ' + req.params.mode)
+});
+
+// templete engine
 app.get('/templete', function(req, res) {
   res.render('temp', {time:Date(), title:'Jade'});
   // temp 라는 이름의 파일을 렌더링해서 전송한다.
